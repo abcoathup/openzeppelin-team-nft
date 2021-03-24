@@ -3,7 +3,7 @@ async function main() {
     // We get the contract to deploy
     const OpenZeppelinTeamNFT = await ethers.getContractFactory("OpenZeppelinTeamNFT");
     console.log("Deploying OpenZeppelinTeamNFT...");
-    const token = await OpenZeppelinTeamNFT.deploy("http://my-json-server.typicode.com/abcoathup/openzeppelin-team-nft/tokens/");
+    const token = await OpenZeppelinTeamNFT.deploy("OpenZeppelin Team NFT","OZT","http://my-json-server.typicode.com/abcoathup/openzeppelin-team-nft/tokens/");
     await token.deployed();
     console.log("OpenZeppelinTeamNFT deployed to:", token.address);
   }
